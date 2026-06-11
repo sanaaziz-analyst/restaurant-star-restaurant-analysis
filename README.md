@@ -1,17 +1,35 @@
-# Restaurant Insights & Star Restaurant Identification
+# **Restaurant-Insights-and-Star-Restaurant-Identification**
 
+## **Project Overview:**
 A data analysis project built for a restaurant consolidator looking to revamp their B2C portal. The business needed a smarter way to identify high performing restaurants and build better recommendation logic, so I worked through the full pipeline: raw data → cleaning → SQL analysis → Tableau visuals → interactive dashboard.
 
 The dataset covered **9,551 restaurants** across multiple countries, with 19 attributes ranging from location and cuisine type to pricing, delivery options, and customer ratings.
 
 ---
+## **Insights**
 
-## Tools Used
+#### Datasets
+- Raw Datasets (to be cleaned) can be found [here](https://github.com/sanaaziz-analyst/restaurant-insights-and-star-restaurant-identification/tree/main/raw_dataset)  
+- Cleaned Datasets can be found [here](https://github.com/sanaaziz-analyst/restaurant-insights-and-star-restaurant-identification/tree/main/cleaned_data)  
 
-- **Python / Pandas** — data cleaning and preprocessing
-- **Jupyter Notebook** — cleaning walkthrough
-- **MySQL** — exploratory analysis
-- **Tableau** — advanced EDA and final dashboard
+#### Data Cleaning & Analysis
+- You can explore the full Python implementation for the data cleaning phase in the [notebook](https://github.com/sanaaziz-analyst/restaurant-insights-and-star-restaurant-identification/blob/main/data_cleaning.ipynb.ipynb), which includes step-by-step code and comments.  
+- The SQL queries utilised to inspect and perform queries can be found [here](https://github.com/sanaaziz-analyst/restaurant-insights-and-star-restaurant-identification/blob/main/eda_queries.sql)  
+- An interactive dashboard can be downloaded [here](https://public.tableau.com/app/profile/sana.aziz/viz/RestaurantInsightMarketingproject/RestaurantInsightsDashboardIdentifyingtheStarRestaurant)  
+
+
+---
+
+## **Tools & Technologies**
+
+| Category | Tools |
+|-----------|--------|
+| Programming & Cleaning | Python (Pandas), Jupyter Notebook |
+| Database Management | MySQL |
+| Visualization | Tableau |
+| Data Storage | CSV files |
+| Version Control | GitHub |
+
 
 ---
 
@@ -19,7 +37,7 @@ The dataset covered **9,551 restaurants** across multiple countries, with 19 att
 
 ---
 
-### Phase 1 — Data Cleaning (Python + Pandas)
+### Phase 1 : Data Cleaning (Python + Pandas)
 
 Before touching any analysis, the data needed a proper look. The raw file came in as an Excel sheet with 9,551 rows and 19 columns. First step was just understanding what was there.
 
@@ -46,7 +64,7 @@ Running `df.info()` showed the structure — 19 columns, a mix of int64, float64
 
 ---
 
-### Phase 2 — Exploratory Data Analysis (SQL)
+### Phase 2 : Exploratory Data Analysis (SQL)
 
 Imported the cleaned CSV into MySQL and ran analysis across five areas.
 
@@ -139,7 +157,7 @@ Restaurants **without** delivery actually accumulated more total votes (**616,46
 
 ---
 
-### Phase 3 — Advanced EDA (Tableau)
+### Phase 3 : Advanced EDA (Tableau)
 
 Moved into Tableau for the visual analysis. All charts are in the `images/` folder.
 
@@ -200,7 +218,7 @@ The scatter plot — coloured by delivery status (blue = No, orange = Yes) — t
 
 ---
 
-### Phase 4 — Dashboard (Tableau)
+### Phase 4 : Dashboard (Tableau)
 
 **Star Restaurant Table**
 
